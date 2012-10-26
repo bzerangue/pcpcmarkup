@@ -54,7 +54,7 @@ $('#Footer').stickyfooter();
     var settings = $.extend(
             {
                 // Height in pixels of drawer in "closed" state
-                visible: 0,
+                visible: -10,
                 // ID of toggle element that opens/closes drawer
                 toggleCSSSelector: '#Toggle',
                 // Class added to toggle to indicate it it open/closed
@@ -119,7 +119,7 @@ $('#Footer').stickyfooter();
 
             } else {
 
-                $footer.wrap('<div></div>').parent().css({'width': '100%', 'height':$footer.height()});
+                $footer.wrap('<div id="stickyfooter"></div>').parent().css({'width': '100%', 'height':$footer.height()});
                 $window.bind('scroll.stickyfooter resize.stickyfooter', function () {
                     if (!_drawerOpen) setFooterPos(false);
                 });

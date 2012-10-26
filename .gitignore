@@ -3,3 +3,5 @@
 .DS_Store
 *.haml
 *.scss
+.sass-cache
+.sass-cache/*

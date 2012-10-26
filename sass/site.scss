@@ -1282,7 +1282,8 @@ h5 {
   }
 }
 
-html { margin-bottom: -10px;}
 
-
+div#stickyfooter { *zoom: 1; }
+div#stickyfooter #footer:before, div#stickyfooter #footer:after { content: ""; display: table; }
+div#stickyfooter #footer:after { clear: both; margin-bottom: -10px;}
 
