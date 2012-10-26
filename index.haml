@@ -1,0 +1,487 @@
+!!! 5
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:charset => "utf-8"}/
+    / Set the viewport width to device width for mobile
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %title Park Cities Presbyterian Church
+    %link{:href => "stylesheets/site.css", :rel => "stylesheet"}/
+    / Le Typekit: @PCPC
+    %script{:src => "//use.typekit.net/fuz6ulc.js"}
+    :javascript
+      try{Typekit.load();}catch(e){}    
+    %script{:src => "javascripts/foundation/modernizr.foundation.js"}
+    / IE Fix for HTML5 Tags
+    /[if lt IE 9]
+      %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
+  %body#home{:role => "homepage"}
+    #wrapper
+      / ==================== Masthead ====================
+      / Mega Dropdown
+      #megaDrop.container
+        .row
+          .two.columns
+            %h4 New Here?
+            %ul
+              %li
+                %a{:href => "twitter.com"} Sundays at PCPC
+              %li
+                %a{:href => "#"} Location
+              %li
+                %a{:href => "#"} Directions
+              %li
+                %a{:href => "#"} Our Beliefs
+              %li
+                %a{:href => "#"} Our Pastors
+              %li
+                %a{:href => "#"} Next Steps
+              %li
+                %a{:href => "#"} Membership
+              %li
+                %a{:href => "#"} Baptism
+              %li
+                %a{:href => "#"} Questions of Faith
+              %li
+                %a{:href => "#"} Our History
+              %li
+                %a{:href => "#"} Our Campus
+          .two.columns
+            %h4 Row Category Title
+            %ul
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+          .two.columns
+            %h4 Row Category Title
+            %ul
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+          .two.columns
+            %h4 Row Category Title
+            %ul
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+          .two.columns
+            %h4 Row Category Title
+            %ul
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+          .two.columns
+            %h4 Row Category Title
+            %ul
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+              %li
+                %a{:href => "#"} Item
+      / Main Nav on Small Devices
+      %nav#topMenu{:role => "navigation"}
+        %ul#nav.nav-bar
+          %li
+            %a{:href => "twitter.com"} ABOUT
+          %li
+            %a{:href => "#"} WORSHIP
+          %li
+            %a{:href => "#"} CONNECT
+          %li
+            %a{:href => "#"} SERVE
+          %li
+            %a{:href => "#"} OUTREACH
+          %li
+            %a{:href => "#"} CARE
+          %li
+            %a{:href => "#"} RESOURCES
+          %li
+            %a{:href => "#"} NEW TO PCPC?
+      / Main Nav: Masthead Menu
+      %header#masthead-wrapper
+        #masthead
+          #logo
+            %a{:href => "index.html"}
+              %h3 Park Cities Presbyterian Church
+          #sunday-service-times
+            %dl
+              %dt Sunday Service Times
+              %dd 8:00 am - Communion Service
+              %dd 9:30 am / 11:00 am
+          #search-box
+            %input{:placeholder => "Search", :type => "text"}/
+            %i.foundicon-search
+          #global-additional-nav
+            %ul
+              %li
+                %a{:href => "#"} News
+                \/
+              %li
+                %a{:href => "#"} Events
+                \/
+              %li
+                %a{:href => "#"} Contact
+          .toggle-nav.nav-main-btn{:onclick => "void(0);"}
+            %a{:href => "#"}
+              .inner Ministry Index
+          .main-toggle.nav-main-btn
+            %a#menuButton.mini-nav{:href => "#menu"}
+              .inner Menu
+      / Main Nav: Site Navigation
+      #global-nav-wrapper
+        %nav#global-nav
+          %ul#menu{:role => "navigation"}
+            %li.mega
+              %a{:href => "#"} ABOUT
+              .container
+                / v :: MEGA HOVERs look like THIS! :: v
+                .mega-inner
+                  .three.columns
+                    %h4 Inner Templates
+                    %ul
+                      %li
+                        %a{:href => "layoutMenu.html"} Layout: Menu
+                      %li
+                        %a{:href => "layoutText.html"} Layout: Text
+                      %li
+                        %a{:href => "layoutTextVideo.html"} Layout: Text + Video
+                      %li
+                        %a{:href => "layoutTextList.html"} Layout: Text + List
+                      %li
+                        %a{:href => "layoutHero.html"} Layout: Text + Hero Image
+                      %li
+                        %a{:href => "layoutTextImage.html"} Layout: + Text + Image
+                      %li
+                        %a{:href => "layoutGridContent.html"} Layout: + Grid + Image
+                  .three.columns
+                    %h4 Category Title
+                    %ul
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                  .three.columns
+                    %h4 Category Title
+                    %ul
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                  .three.columns
+                    %h4 Category Title
+                    %ul
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+                      %li
+                        %a{:href => "#"} Item Title
+            %li
+              %a{:href => ""} WORSHIP
+            %li
+              %a{:href => "#"} CONNECT
+            %li
+              %a{:href => "#"} SERVE
+            %li
+              %a{:href => "#"} OUTREACH
+            %li
+              %a{:href => "#"} CARE
+            %li
+              %a{:href => "#"} RESOURCES
+            %li
+              %a{:href => "#"} NEW TO PCPC?
+      / ==================== Content ====================
+      %header#welcome
+        %h1 Welcome to Park Cities Presbyterian Church
+      %section#feature
+        #featuredContent.contentSlider
+          %div
+            %img{:alt => "", :src => "images/photos/11_SarahRhodes_Kodak-Portra_400_VC_Plus.jpeg"}/
+          .mixedContent
+            .inner
+              .four.columns
+                %a{:href => "#"}
+                  %img{:alt => "", :src => "http://www.tauruscommercial.com/img/slimbox/park_cities1.jpg"}/
+              .eight.columns
+                %h4 Biblical Imagination Conference with Michael Card
+                %p Those who write music see in reality depths of richness—and darkness—to which most of us remain hopelessly aloof. Michael Card means to awaken us to the sacred subtleties beneath our otherwise mundane lives by leading us to luxuriate in the Word of God until we see what we've always missed.
+                %span.note —Patrick Lafferty
+                %br
+                  .action
+                    %a{:href => "#"} Details
+          .mixedContent
+            .inner
+              .four.columns
+                /
+                  <div class="flex-video vimeo">
+                  <iframe src="http://player.vimeo.com/video/45947083?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                  </div>
+              .eight.columns
+                %h4 The Mission of Outreach
+                %p God has graciously allowed us to be part of what He is doing in our city, country and world. We have been given the privilege to send out missionaries and church planters and partner with and support churches and organizations…
+                .action
+                  %a{:href => "#"} Details
+      %section.main
+        .row
+          #upcoming-events
+            %header
+              %h4 UPCOMING EVENTS
+              %a.more{:href => "#"} View All
+            %ol.slats
+              %li
+                .date-tag
+                  %span.month Aug
+                  %span.date 22
+                .details
+                  %h5 Forever: Marriage Conference
+                  %time{:datetime => "2012-08-22"} Friday August 22, 2012 | 6:30pm
+                .action
+                  %a{:href => "#"} Details
+              %li
+                .date-tag
+                  %span.month Aug
+                  %span.date 23
+                .details
+                  %h5 Men’s Breakfast
+                  %time{:datetime => "2012-08-22"} Friday August 22, 2012 | 6:30pm
+                .action
+                  %a{:href => "#"} Details
+          #latest-sermon
+            .inner
+              .wrapper
+                %header
+                  %h4 LATEST SERMON
+                  %a.more{:href => "#"} Archives
+                .notes
+                  %time{:datetime => "2012-08-22"} Sunday September 25, 2011
+                  %h5 HUNGER &amp; THIRST FOR RIGHTEOUSNESS
+                  %span.emph by Mark Davis
+                  %ul
+                    %li
+                      %a.media-btn.listen{:href => "#"} Listen Now
+                    %li
+                      %a.media-btn.download{:href => "#"} Download
+        #threeAcross.contentSlider
+          %div
+            %ul
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "", :src => "http://placehold.it/275x184"}/
+                %h5 Featured Title Here
+                %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                %a.more{:href => "#"} Read More
+              %li
+                %strong
+                  %a{:href => "#"}
+                    %img{:alt => "", :src => "http://placehold.it/275x184"}/
+                %h5 Featured Title Here
+                %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                %a.more{:href => "#"} Read More
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "", :src => "http://placehold.it/320x184"}/
+                %h5 Featured Title Here
+                %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                %a.more{:href => "#"} Read More
+          %div
+            %ul
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "", :src => "http://placehold.it/320x184"}/
+                %h5 Featured Title Here
+                %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                %a.more{:href => "#"} Read More
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "", :src => "http://placehold.it/275x184"}/
+                %h5 Featured Title Here
+                %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                %a.more{:href => "#"} Read More
+              %li
+                %a{:href => "#"}
+                  %img{:alt => "", :src => "http://placehold.it/275x184"}/
+                %h5 Featured Title Here
+                %p Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                %a.more{:href => "#"} Read More
+      #wrapper_footer        
+    / ==================== Footer ====================
+    %footer#footer
+      .footerInner
+        .row
+          .three.columns
+            %h4 Content
+            #search-box
+              %input{:placeholder => "Search", :type => "text"}/
+              %i.foundicon-search
+            %ul
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+          .three.columns
+            %h4 Content
+            %ul
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+          .three.columns
+            %h4 Content
+            %ul
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+          .three.columns
+            %h4 Content
+            %ul
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+              %li
+                %a{:href => "#", :title => "Item"} Item
+    / Le Javascripts
+    %script{:src => "javascripts/foundation/jquery.js"}
+    %script{:src => "javascripts/foundation/foundation.min.js"}
+    %script{:src => "javascripts/foundation/jquery.offcanvas.js"}
+    %script{:src => "javascripts/foundation/foundation.mega-drop.js"}
+    %script{:src => "javascripts/hoverintent.js"}
+    %script{:src => "javascripts/sticky-footer.js"}
+    %script{:src => "javascripts/foundation/app.js"}
