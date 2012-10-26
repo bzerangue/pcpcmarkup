@@ -59,7 +59,7 @@ html, body { margin: 0; padding: 0; height: 100%;}
   }
 }
 
-[role="homepage"] {
+body {
   -moz-animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
   -o-animation-name: fadeIn;
@@ -68,7 +68,7 @@ html, body { margin: 0; padding: 0; height: 100%;}
   animation-name: fadeIn;
 }
 
-[role="homepage"] {
+body {
   -moz-animation-duration: 1s;
   -webkit-animation-duration: 1s;
   -o-animation-duration: 1s;
