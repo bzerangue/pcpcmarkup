@@ -1451,7 +1451,7 @@ div.orbit-wrapper div.slider-nav span { top: 32%; }
 #threeAcross ul li a { display: block; position: relative; z-index: 10; }
 @media (max-width: 650px) { #threeAcross ul li a.more { display: none; } }
 
-#footer { width: 100%; height: 275px; margin: 0 auto 0; padding: 0; background: transparent; }
+#footer { width: 100%; margin: 0 auto 0; padding: 0; background: transparent; }
 #footer .footerInner { border-top: 1px solid #8f9c87; background: #9aa895 url("../images/pcpcTheme/footer-bg.png") repeat; }
 #footer #search-box { display: none; }
 @media (max-width: 766px) { #footer #search-box { display: block; } }
