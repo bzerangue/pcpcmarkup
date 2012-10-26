@@ -54,7 +54,7 @@ $('#Footer').stickyfooter();
     var settings = $.extend(
             {
                 // Height in pixels of drawer in "closed" state
-                visible: 60,
+                visible: 0,
                 // ID of toggle element that opens/closes drawer
                 toggleCSSSelector: '#Toggle',
                 // Class added to toggle to indicate it it open/closed
