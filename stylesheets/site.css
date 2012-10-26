@@ -1462,7 +1462,5 @@ div.orbit-wrapper div.slider-nav span { top: 32%; }
 #footer ul li { padding: 6px 0; }
 
 div#stickyfooter { *zoom: 1; }
-
-div#stickyfooter #footer:before, div#stickyfooter #footer:after { content: ""; display: table; }
-
-div#stickyfooter #footer:after { clear: both; margin-bottom: -10px; }
+div#stickyfooter #footer:before { content: ""; display: table; }
+div#stickyfooter #footer:after { content: ""; display: table; clear: both; margin-bottom: -10px; }
