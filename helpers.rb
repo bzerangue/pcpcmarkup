@@ -1,5 +1,4 @@
 require 'haml'
-require 'maruku'
 
 module Haml::Helpers
 
@@ -38,13 +37,13 @@ module Haml::Helpers
     raise "Partial #{file} not found"
   end
 
-  # Include Markdown files
+  # Include Markdown files with :markdown filter
+  # Ex.
+  # :markdown
+  #   includefile("directory/file.md")
 
   def includefile(filepath)
     File.read(File.join(File.dirname(__FILE__), filepath))
   end
 
-  def includemaruku(filepath)
-    Maruku.new(File.read(File.join(File.dirname(__FILE__), filepath))).to_html
-  end
 end
