@@ -90,6 +90,8 @@ $serifFont: "minion-pro", serif;
 
 @import "offcanvas";
 
+@import "compass/support";
+
 
 
 
@@ -658,7 +660,7 @@ ul.breadcrumbs {
   .inner {
     @extend .twelve, .columns;
 
-    & > div {
+    > div {
        @extend .three, .columns;
     }
     h5 {margin-bottom:2px;}
