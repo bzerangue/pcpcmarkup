@@ -46,7 +46,7 @@
 
     $("li.mega").hoverIntent(megaConfig);
 
-    $('#footer').stickyfooter(); 
+     
     });
 
 
