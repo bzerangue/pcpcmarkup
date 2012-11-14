@@ -1,4 +1,4 @@
-  $('#footer').stickyfooter();
+  
 
 
   // Orbits ...
@@ -25,6 +25,10 @@
 
 
  $(document).ready(function() {
+
+      // Sticky Footer
+      $('#footer').stickyfooter();
+
       
       // Main Nav Mega Dropdowns
       function addMega(){
