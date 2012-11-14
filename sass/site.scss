@@ -82,7 +82,10 @@ $serifFont: "minion-pro", serif;
 //@import "compass/css3/text-shadow";
 //@import "compass/css3/box-shadow";
 
+@import "settings";
 @import "foundation";
+
+
 //@import "compass/layout/sticky-footer";
 
 // Sticky Footer 
@@ -646,7 +649,7 @@ ul.breadcrumbs {
   .inner {
     @extend .twelve, .columns;
 
-    & > div {
+    > div {
        @extend .four, .columns;
     }
   }
