@@ -1,4 +1,4 @@
-  
+  $('#footer').stickyfooter();
 
 
   // Orbits ...
@@ -25,7 +25,6 @@
 
 
  $(document).ready(function() {
-
       
       // Main Nav Mega Dropdowns
       function addMega(){
@@ -46,7 +45,7 @@
 
     $("li.mega").hoverIntent(megaConfig);
 
-     
+      
     });
 
 
