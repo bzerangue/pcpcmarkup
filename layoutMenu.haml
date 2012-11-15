@@ -12,7 +12,7 @@
   %body
     / ==================== Masthead ====================
     = render 'megadrop'
-    
+
     / Main Nav on Small Devices
     %nav#topMenu{:role => "navigation"}
       %ul#nav.nav-bar
@@ -189,61 +189,8 @@
     %footer#footer
       .footerInner
         .row
-          .three.columns
-            %h4 Content
-            #search-box
-              %input{:placeholder => "Search", :type => "text"}/
-              %i.foundicon-search
-            %ul
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-          .three.columns
-            %h4 Content
-            %ul
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-          .three.columns
-            %h4 Content
-            %ul
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-          .three.columns
-            %h4 Content
-            %ul
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
-              %li
-                %a{:href => "#", :title => "Item"} Item
+          = render 'footer'
+          
     / Le Javascripts
     %script{:src => "javascripts/foundation/jquery.js"}
     %script{:src => "javascripts/foundation/foundation.min.js"}
