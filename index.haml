@@ -8,19 +8,7 @@
 %html.no-js{:lang => "en"}
   / <![endif]
   %head
-    %meta{:charset => "utf-8"}/
-    / Set the viewport width to device width for mobile
-    %meta{:content => "width=device-width", :name => "viewport"}/
-    %title Park Cities Presbyterian Church
-    %link{:href => "stylesheets/site.css", :rel => "stylesheet"}/
-    / Le Typekit: @PCPC
-    %script{:src => "//use.typekit.net/fuz6ulc.js"}
-    :javascript
-      try{Typekit.load();}catch(e){}    
-    %script{:src => "javascripts/foundation/modernizr.foundation.js"}
-    / IE Fix for HTML5 Tags
-    /[if lt IE 9]
-      %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
+    = render 'head'
   %body#home{:role => "homepage"}
     #wrapper
       / ==================== Masthead ====================
@@ -85,7 +73,35 @@
                 / v :: MEGA HOVERs look like THIS! :: v
                 .mega-inner
                   .three.columns
-                    %h4 Inner Templates
+                    %h4 About PCPC
+                    %ul
+                      %li
+                        %a{:href => "#"} Identity
+                      %li
+                        %a{:href => "#"} Our History
+                      %li
+                        %a{:href => "#"} Meet Our Staff
+                      %li
+                        %a{:href => "#"} Stories of Rescue
+                      %li
+                        %a{:href => "#"} Jobs at PCPC
+                      %li
+                        %a{:href => "#"} Leadership
+                  .three.columns
+                    %img{:src => "http://about.pcpc.org/image/2/200/150/1/0/assets/images/logo.png", :alt => "PCPC"}
+
+                  .six.columns
+                    %h4 Welcome
+                    %ul
+                      %li If you are new to our church, or just getting to know us through our website, we are delighted to help you get to know about us. PCPC is a large, extended family of people seeking to be Christ's disciples and to bear His truth into our world. That commitment is expressed in our Purpose — that we exist to extend the transforming presence of the Kingdom of our Lord Jesus Christ in Dallas and to the world.
+
+                  
+            %li.mega
+              %a{:href => "#"} WORSHIP
+              .container
+                .mega-inner
+                  .three.columns
+                    %h4 Category Title
                     %ul
                       %li
                         %a{:href => "layoutMenu.html"} Layout: Menu
@@ -101,47 +117,7 @@
                         %a{:href => "layoutTextImage.html"} Layout: + Text + Image
                       %li
                         %a{:href => "layoutGridContent.html"} Layout: + Grid + Image
-                  .three.columns
-                    %h4 Category Title
-                    %ul
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                  .three.columns
-                    %h4 Category Title
-                    %ul
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                  .three.columns
-                    %h4 Category Title
-                    %ul
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-                      %li
-                        %a{:href => "#"} Item Title
-            %li
-              %a{:href => ""} WORSHIP
+                  .nine.columns
             %li
               %a{:href => "#"} CONNECT
             %li
@@ -194,25 +170,21 @@
             %ol.slats
               %li
                 .date-tag
-                  %span.month Aug
-                  %span.date 22
+                  %span.month Nov
+                  %span.date 16
                 .details
-                  %h5 Forever: Marriage Conference
-                  %time{:datetime => "2012-08-22"} Friday August 22, 2012 | 6:30pm
+                  %h5 Thanksgiving potluck dinner
+                  %time{:datetime => "2012-11-16"} Friday | 6:00pm
                 .action
                   %a{:href => "#"} Details
-                .details
-                  %h5 Forever: Marriage Conference
-                  %time{:datetime => "2012-08-22"} Friday August 22, 2012 | 6:30pm
-                .action
-                  %a{:href => "#"} Details
+
               %li
                 .date-tag
-                  %span.month Aug
-                  %span.date 23
+                  %span.month Nov
+                  %span.date 22
                 .details
-                  %h5 Men’s Breakfast
-                  %time{:datetime => "2012-08-22"} Friday August 22, 2012 | 6:30pm
+                  %h5 WDCC Thanksgiving day outreach
+                  %time{:datetime => "2012-11-22"} Thursday | 6:00-11:00 am
                 .action
                   %a{:href => "#"} Details
           #latest-sermon
@@ -222,14 +194,14 @@
                   %h4 LATEST SERMON
                   %a.more{:href => "#"} Archives
                 .notes
-                  %time{:datetime => "2012-08-22"} Sunday September 25, 2011
-                  %h5 HUNGER &amp; THIRST FOR RIGHTEOUSNESS
+                  %time{:datetime => "2012-11-11"} November 11, 2012
+                  %h5 Children Bringing Children
                   %span.emph by Mark Davis
                   %ul
                     %li
-                      %a.media-btn.listen{:href => "#"} Listen Now
+                      %a.media-btn.listen{:href => "http://pcpcmorningsermons.s3.amazonaws.com/20121111_davis.mp3"} Listen Now
                     %li
-                      %a.media-btn.download{:href => "#"} Download
+                      %a.media-btn.download{:href => "http://pcpcmorningsermons.s3.amazonaws.com/20121111_davis.mp3"} Download
         #threeAcross.contentSlider
           %div
             %ul
