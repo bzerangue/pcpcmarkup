@@ -1,5 +1,11 @@
 // Styles for Park Cities Presbyterian
+@import "fadein-page";
 
+
+@import "foundation";
+
+
+@import "offcanvas";
 
 
 // Colors, Images ===========================
@@ -75,20 +81,7 @@ $serifFont: "minion-pro", serif;
   }
 }
 
-@import "fadein-page";
 
-
-//@import "compass/css3/border-radius";
-//@import "compass/css3/text-shadow";
-//@import "compass/css3/box-shadow";
-
-@import "foundation";
-//@import "compass/layout/sticky-footer";
-
-// Sticky Footer 
-//@include sticky-footer(225px, "#wrapper", "#wrapper_footer", "#footer");
-
-@import "offcanvas";
 
 
 
@@ -642,10 +635,12 @@ ul.breadcrumbs {
   @extend .row;
 
   .inner {
-    @extend .twelve, .columns;
+    @extend .twelve; 
+    @extend .columns;
 
-    & > div {
-       @extend .four, .columns;
+    > div {
+       @extend .four;
+       @extend .columns;
     }
   }
 }
@@ -656,10 +651,12 @@ ul.breadcrumbs {
   @extend .row;
 
   .inner {
-    @extend .twelve, .columns;
+    @extend .twelve;
+    @extend .columns;
 
-    & > div {
-       @extend .three, .columns;
+    > div {
+       @extend .three;
+       @extend .columns;
     }
     h5 {margin-bottom:2px;}
   }
