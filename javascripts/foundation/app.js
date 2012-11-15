@@ -27,7 +27,7 @@
  $(document).ready(function() {
 
       // Sticky Footer
-      //$('#footer').stickyfooter();
+      $('#footer').stickyfooter();
 
       
       // Main Nav Mega Dropdowns
