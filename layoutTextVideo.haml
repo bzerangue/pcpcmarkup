@@ -4,143 +4,20 @@
 /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
 /[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
 /[if IE 8] <html class="no-js lt-ie9" lang="en">
-/ [if gt IE 8]><!
+/[if gt IE 8] ><!
 %html.no-js{:lang => "en"}
   / <![endif]
   %head
-    = render 'head'
+    / @include _head
+    = render 'includes/_head'
   %body
     / ==================== Masthead ====================
-    = render 'megadrop'
-
-    / Main Nav on Small Devices
-    %nav#topMenu{:role => "navigation"}
-      %ul#nav.nav-bar
-        %li
-          %a{:href => "twitter.com"} ABOUT
-        %li
-          %a{:href => "#"} WORSHIP
-        %li
-          %a{:href => "#"} CONNECT
-        %li
-          %a{:href => "#"} SERVE
-        %li
-          %a{:href => "#"} OUTREACH
-        %li
-          %a{:href => "#"} CARE
-        %li
-          %a{:href => "#"} RESOURCES
-        %li
-          %a{:href => "#"} NEW TO PCPC?
-    / Main Nav: Masthead Menu
-    %header#masthead-wrapper
-      #masthead
-        #logo
-          %a{:href => "index.html"}
-            %h3 Park Cities Presbyterian Church
-        #sunday-service-times
-          %dl
-            %dt Sunday Service Times
-            %dd 8:00 am - Communion Service
-            %dd 9:30 am / 11:00 am
-        #search-box
-          %input{:placeholder => "Search", :type => "text"}/
-          %i.foundicon-search
-        #global-additional-nav
-          %ul
-            %li
-              %a{:href => "#"} News
-              \/
-            %li
-              %a{:href => "#"} Events
-              \/
-            %li
-              %a{:href => "#"} Contact
-        .toggle-nav.nav-main-btn{:onclick => "void(0);"}
-          %a{:href => "#"}
-            .inner Ministry Index
-        .main-toggle.nav-main-btn
-          %a#menuButton.mini-nav{:href => "#menu"}
-            .inner Menu
+    / @include _megadrop
+    = render 'includes/_megadrop'
+    / @include _masthead
+    = render 'includes/_masthead'
     / Main Nav: Site Navigation
-    #global-nav-wrapper
-      %nav#global-nav
-        %ul#menu{:role => "navigation"}
-          %li.mega
-            %a{:href => "#"} ABOUT
-            .container
-              / v :: MEGA HOVERs look like THIS! :: v
-              .mega-inner
-                .three.columns
-                  %h4 Inner Templates
-                  %ul
-                    %li
-                      %a{:href => "layoutMenu.html"} Layout: Menu
-                    %li
-                      %a{:href => "layoutText.html"} Layout: Text
-                    %li
-                      %a{:href => "layoutTextVideo.html"} Layout: Text + Video
-                    %li
-                      %a{:href => "layoutTextList.html"} Layout: Text + List
-                    %li
-                      %a{:href => "layoutHero.html"} Layout: Text + Hero Image
-                    %li
-                      %a{:href => "layoutTextImage.html"} Layout: + Text + Image
-                    %li
-                      %a{:href => "layoutGridContent.html"} Layout: + Grid + Image
-                .three.columns
-                  %h4 Category Title
-                  %ul
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                .three.columns
-                  %h4 Category Title
-                  %ul
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                .three.columns
-                  %h4 Category Title
-                  %ul
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-                    %li
-                      %a{:href => "#"} Item Title
-          %li
-            %a{:href => ""} WORSHIP
-          %li
-            %a{:href => "#"} CONNECT
-          %li
-            %a{:href => "#"} SERVE
-          %li
-            %a{:href => "#"} OUTREACH
-          %li
-            %a{:href => "#"} CARE
-          %li
-            %a{:href => "#"} RESOURCES
-          %li
-            %a{:href => "#"} NEW TO PCPC?
+    = render 'includes/_globalnav'
     / ==================== Content ====================
     %header.row.page-menu
       .complimentary-toggle
@@ -159,7 +36,7 @@
           %h1 Elders &amp; Leaders
         .inner
           .flex-video.vimeo
-            %iframe{:allowFullScreen => "", :frameborder => "0", :height => "281", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/45947083?title=0&amp;byline=0&amp;portrait=0", :webkitAllowFullScreen => "", :width => "500"}
+            %iframe{:allowFullScreen => "", :frameborder => "0", :height => "281", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/45947083?title=0&amp;amp;byline=0&amp;amp;portrait=0", :webkitAllowFullScreen => "", :width => "500"}
           %p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.
           %p Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
           %p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh ultricies vehicula ut id elit.
@@ -208,16 +85,11 @@
           %li
             %a{:href => "#"} Baptism
     / ==================== Footer ====================
-    #wrapper_footer
     %footer#footer
       .footerInner
         .row
-          = render 'footer'
-          
+          / @include _footer
+          = render 'includes/_footer'
     / Le Javascripts
-    %script{:src => "javascripts/foundation/jquery.js"}
-    %script{:src => "javascripts/foundation/foundation.min.js"}
-    %script{:src => "javascripts/foundation/jquery.offcanvas.js"}
-    %script{:src => "javascripts/foundation/foundation.mega-drop.js"}
-    %script{:src => "javascripts/hoverintent.js"}
-    %script{:src => "javascripts/foundation/app.js"}
+    / @include _javascript-load
+    = render 'includes/_javascript-load'

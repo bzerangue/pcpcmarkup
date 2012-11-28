@@ -1,0 +1,16 @@
+%meta{:charset => "utf-8"}/
+%meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+/ Set the viewport width to device width for mobile
+%meta{:content => "width=device-width", :name => "viewport"}/
+%title Park Cities Presbyterian Church
+%link{:href => "assets/css/site.css", :rel => "stylesheet"}/
+/ Le Typekit: @PCPC
+%script{:src => "//use.typekit.net/fuz6ulc.js"}
+:javascript
+  //
+    try{Typekit.load();}catch(e){}
+  //
+  %script{:src => "javascripts/foundation/modernizr.foundation.js"}
+/ IE Fix for HTML5 Tags
+/[if lt IE 9]
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

@@ -4,139 +4,28 @@
 /[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
 /[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
 /[if IE 8] <html class="no-js lt-ie9" lang="en">
-/ [if gt IE 8]><!
+/[if gt IE 8] ><!
 %html.no-js{:lang => "en"}
   / <![endif]
   %head
-    = render 'head'
+    / @include _head
+    = render 'includes/_head'
   %body#home{:role => "homepage"}
     #wrapper
       / ==================== Masthead ====================
-      = render 'megadrop'
-
-      / Main Nav on Small Devices
-      %nav#topMenu{:role => "navigation"}
-        %ul#nav.nav-bar
-          %li
-            %a{:href => "twitter.com"} ABOUT
-          %li
-            %a{:href => "#"} WORSHIP
-          %li
-            %a{:href => "#"} CONNECT
-          %li
-            %a{:href => "#"} SERVE
-          %li
-            %a{:href => "#"} OUTREACH
-          %li
-            %a{:href => "#"} CARE
-          %li
-            %a{:href => "#"} RESOURCES
-          %li
-            %a{:href => "#"} NEW TO PCPC?
-      / Main Nav: Masthead Menu
-      %header#masthead-wrapper
-        #masthead
-          #logo
-            %a{:href => "index.html"}
-              %h3 Park Cities Presbyterian Church
-          #sunday-service-times
-            %dl
-              %dt Sunday Service Times
-              %dd 8:00 am - Communion Service
-              %dd 9:30 am / 11:00 am
-          #search-box
-            %input{:placeholder => "Search", :type => "text"}/
-            %i.foundicon-search
-          #global-additional-nav
-            %ul
-              %li
-                %a{:href => "#"} News
-                \/
-              %li
-                %a{:href => "#"} Events
-                \/
-              %li
-                %a{:href => "#"} Contact
-          .toggle-nav.nav-main-btn{:onclick => "void(0);"}
-            %a{:href => "#"}
-              .inner Ministry Index
-          .main-toggle.nav-main-btn
-            %a#menuButton.mini-nav{:href => "#menu"}
-              .inner Menu
+      / @include _megadrop
+      = render 'includes/_megadrop'
+      / @include _masthead
+      = render 'includes/_masthead'
       / Main Nav: Site Navigation
-      #global-nav-wrapper
-        %nav#global-nav
-          %ul#menu{:role => "navigation"}
-            %li.mega
-              %a{:href => "#"} ABOUT
-              .container
-                / v :: MEGA HOVERs look like THIS! :: v
-                .mega-inner
-                  .three.columns
-                    %h4 About PCPC
-                    %ul
-                      %li
-                        %a{:href => "#"} Identity
-                      %li
-                        %a{:href => "#"} Our History
-                      %li
-                        %a{:href => "#"} Meet Our Staff
-                      %li
-                        %a{:href => "#"} Stories of Rescue
-                      %li
-                        %a{:href => "#"} Jobs at PCPC
-                      %li
-                        %a{:href => "#"} Leadership
-                  .three.columns
-                    %img{:src => "http://about.pcpc.org/image/2/200/150/1/0/assets/images/logo.png", :alt => "PCPC"}
-
-                  .six.columns
-                    %h4 Welcome
-                    %ul
-                      %li If you are new to our church, or just getting to know us through our website, we are delighted to help you get to know about us. PCPC is a large, extended family of people seeking to be Christ's disciples and to bear His truth into our world. That commitment is expressed in our Purpose — that we exist to extend the transforming presence of the Kingdom of our Lord Jesus Christ in Dallas and to the world.
-
-                  
-            %li.mega
-              %a{:href => "#"} WORSHIP
-              .container
-                .mega-inner
-                  .three.columns
-                    %h4 Category Title
-                    %ul
-                      %li
-                        %a{:href => "layoutMenu.html"} Layout: Menu
-                      %li
-                        %a{:href => "layoutText.html"} Layout: Text
-                      %li
-                        %a{:href => "layoutTextVideo.html"} Layout: Text + Video
-                      %li
-                        %a{:href => "layoutTextList.html"} Layout: Text + List
-                      %li
-                        %a{:href => "layoutHero.html"} Layout: Text + Hero Image
-                      %li
-                        %a{:href => "layoutTextImage.html"} Layout: + Text + Image
-                      %li
-                        %a{:href => "layoutGridContent.html"} Layout: + Grid + Image
-                  .nine.columns
-            %li
-              %a{:href => "#"} CONNECT
-            %li
-              %a{:href => "#"} SERVE
-            %li
-              %a{:href => "#"} OUTREACH
-            %li
-              %a{:href => "#"} CARE
-            %li
-              %a{:href => "#"} RESOURCES
-            %li
-              %a{:href => "#"} NEW TO PCPC?
+      = render 'includes/_globalnav'
       / ==================== Content ====================
       %header#welcome
         %h1 Welcome to Park Cities Presbyterian Church
       %section#feature
         #featuredContent.contentSlider
           %div
-            %img{:alt => "", :src => "images/photos/11_SarahRhodes_Kodak-Portra_400_VC_Plus.jpeg"}/
+            %img{:alt => "", :src => "assets/images/photos/11_SarahRhodes_Kodak-Portra_400_VC_Plus.jpeg"}/
           .mixedContent
             .inner
               .four.columns
@@ -154,7 +43,7 @@
               .four.columns
                 /
                   <div class="flex-video vimeo">
-                  <iframe src="http://player.vimeo.com/video/45947083?title=0&amp;amp;byline=0&amp;amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                  <iframe src="http://player.vimeo.com/video/45947083?title=0&amp;amp;amp;byline=0&amp;amp;amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                   </div>
               .eight.columns
                 %h4 The Mission of Outreach
@@ -177,7 +66,6 @@
                   %time{:datetime => "2012-11-16"} Friday | 6:00pm
                 .action
                   %a{:href => "#"} Details
-
               %li
                 .date-tag
                   %span.month Nov
@@ -232,18 +120,13 @@
                 %a{:href => "#"}
                   %img{:alt => "", :src => "http://placehold.it/320x180"}/
                 %h5 Featured Title Here
-      #wrapper_footer        
+      #wrapper_footer
     / ==================== Footer ====================
     %footer#footer
       .footerInner
         .row
-          = render 'footer'
-
+          / @include _footer
+          = render 'includes/_footer'
     / Le Javascripts
-    %script{:src => "javascripts/foundation/jquery.js"}
-    %script{:src => "javascripts/foundation/foundation.min.js"}
-    %script{:src => "javascripts/foundation/jquery.offcanvas.js"}
-    %script{:src => "javascripts/foundation/foundation.mega-drop.js"}
-    %script{:src => "javascripts/hoverintent.js"}
-    %script{:src => "javascripts/sticky-footer.js"}
-    %script{:src => "javascripts/foundation/app.js?v1"}
+    / @include _javascript-load
+    = render 'includes/_javascript-load'

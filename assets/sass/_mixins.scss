@@ -1,0 +1,49 @@
+// Mixins
+@mixin linkColor($color) {
+  color: $color;
+  font-size:1.01em;
+  &:hover {
+    color:darken($color, 10%);
+  }
+}
+
+@mixin typeset($weight, $size, $family, $style: normal, $color: $slate) {
+  font-weight:$weight;
+  font-size:$size;
+  font-family:$family;
+  font-style:$style;
+  color: $color;
+}
+
+@mixin transition($attribute, $time, $type: ease-in-out) {
+  -webkit-transition: $attribute $time $type;
+  -moz-transition: $attribute $time $type;
+  -o-transition: $attribute $time $type;
+  transition: $attribute $time $type;
+}
+
+
+// Breakpoints
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @else if $point == cub {
+    @media (max-width: 500px)  { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 650px)  { @content; }
+  }
+  @else if $point == sheep {
+    @media (max-width:766px) {@content; }
+  }
+  @else if $point == sheep-to-ram {
+    @media (min-width:768px) and (max-width:996px) {@content; }
+  }
+  @else if $point == ram {
+    @media (max-width:996px) {@content; }
+  }
+}

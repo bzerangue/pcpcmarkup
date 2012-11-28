@@ -1,0 +1,49 @@
+/ Main Nav on Small Devices
+%nav#topMenu{:role => "navigation"}
+  %ul#nav.nav-bar
+    %li
+      %a{:href => "twitter.com"} ABOUT
+    %li
+      %a{:href => "#"} WORSHIP
+    %li
+      %a{:href => "#"} CONNECT
+    %li
+      %a{:href => "#"} SERVE
+    %li
+      %a{:href => "#"} OUTREACH
+    %li
+      %a{:href => "#"} CARE
+    %li
+      %a{:href => "#"} RESOURCES
+    %li
+      %a{:href => "#"} NEW TO PCPC?
+/ Main Nav: Masthead Menu
+%header#masthead-wrapper
+  #masthead
+    #logo
+      %a{:href => "index.html"}
+        %h3 Park Cities Presbyterian Church
+    #sunday-service-times
+      %dl
+        %dt Sunday Service Times
+        %dd 8:00 am - Communion Service
+        %dd 9:30 am / 11:00 am
+    #search-box
+      %input{:placeholder => "Search", :type => "text"}/
+      %i.foundicon-search
+    #global-additional-nav
+      %ul
+        %li
+          %a{:href => "#"} News
+          \/
+        %li
+          %a{:href => "#"} Events
+          \/
+        %li
+          %a{:href => "#"} Contact
+    .toggle-nav.nav-main-btn{:onclick => "void(0);"}
+      %a{:href => "#"}
+        .inner Ministry Index
+    .main-toggle.nav-main-btn
+      %a#menuButton.mini-nav{:href => "#menu"}
+        .inner Menu

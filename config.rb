@@ -1,14 +1,14 @@
 
-require 'zurb-foundation'
+require '/usr/local/Cellar/ruby/1.9.3-p286/lib/ruby/gems/1.9.1/gems/zurb-foundation-3.2.2/lib/zurb-foundation.rb'
 # Require any additional compass plugins here.
 
 
 # Set this to the root of your project when deployed:
 http_path = "/"
-css_dir = "stylesheets"
-sass_dir = "sass"
-images_dir = "images"
-javascripts_dir = "javascripts"
+css_dir = "assets/css"
+sass_dir = "assets/sass"
+images_dir = "assets/images"
+javascripts_dir = "assets/js"
 
 # You can select your preferred output style here (can be overridden via the command line):
 output_style = :compact
